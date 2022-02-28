@@ -156,7 +156,6 @@ class jogo:
                 # se campo destino for igual a 0, movimentar para
                 self.arena[self.campo_y_destino][self.campo_x_destino] = self.regra_jogador[0]
                 self.arena[self.campo_y_inicial][self.campo_x_inicial] = 0
-                print(self.arena)
                 # substinui a peça e adiciona ponto ao placar
         else:
             print("Jogador não pode escolher esta peça!")
@@ -165,7 +164,7 @@ class jogo:
 start = jogo()
 
 while True:
-    # clear()
+    clear()
     start.muda_jogadores()
     start.print_arena()
     start.posicao_inicial()
